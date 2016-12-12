@@ -1,0 +1,68 @@
+goa
+Une approche innovative pour le developement de micro=services.
+13 Dec 2016
+Tags: goa, golang, microservices, french
+
+https://goa.design
+https://gophers.slack.com/messages/goa/
+raphael@goa.design
+@rgsimon
+
+*
+
+.background ./images/goa_cover.png
+
+* Qui Suis-Je?
+
+Raphael Simon – Chef Architecte RightScale
+
+- Impliqué dans la conception de nombreuses APIs internes
+- Revu et construis de nombreuses integrations avec des APIs externes
+- Subis les consequences dans les deux cas
+
+.image ./images/0_rightscale-team.jpg 358 _
+
+* goa
+
+Le but de goa est de permettre le developement rapide d'API tout en:
+
+- permettant aux developeurs de ne pas avoir a repeter dans le code les decisions prises lors de la conception
+- garantissant aux reviseurs que ces decisions sont bien implementees
+
+goa remplis ces buts grace a la synchronisation automatique des documents de
+conception avec le code et la documentation.
+
+.image ./images/transparent.png 1 1
+.image ./images/goa-logo.svg 180 _
+
+* goagen
+
+La synchronisation est obtenue a travers l'utilisation de l'outil `goagen`.
+
+Cet outil transforme une specification ecrite en un DSL Go en code serveur, code
+client, specification Swagger et plusieurs autres produits de la generation
+automatique.
+
+goa met donc a disposition une implementation d'un DSL Go permettant la
+description d'API, un outil qui genere du code a partir de cette description et
+enfin un package Go qui s'integre avec le code genere et permet le developement
+du service et du client.
+
+* goa Et Le Monde Des Microservices
+
+L'utilisation d'un DSL Go a plusieurs consequences interressantes:
+
+- Certaines parties de la conception peuvent etre partagees entre plusieurs API (permettant par exemple la reutilisation de types)
+- Un document de conception peut etre implemente par plusieurs services (interessant lors de la conception de systemes suivant l'architecture CQRS par exemple)
+
+.background ./images/background.png
+
+* goa, Le Projet
+
+Open source, license MIT.
+
+Communite active et en pleine croissance
+
+goa est en production dans plusieurs entreprises
+
+* Demo
